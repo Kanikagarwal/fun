@@ -78,23 +78,23 @@
     <div class="text">Happy Birthday</div>
     <button id="playButton" style="display: none;">Play Music</button>
     <script>
-        // Prompt the user for their name
+       
         let name = prompt("Enter your name");
         let query = document.querySelector(".name");
         
-        // Display the entered name
+      
         query.innerHTML = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
 
-        // Check if the entered name is "Chandan" (case-insensitive)
+       
         
             let playButton = document.getElementById("playButton");
-            playButton.style.display = "block"; // Show the button
+            playButton.style.display = "block";
             
             let audio = new Audio('music.mp3');
             
-            // Add click event to the button
+            
             playButton.addEventListener('click', function () {
-                audio.play(); // Play the audio
+                audio.play();
             });
         
     </script>
