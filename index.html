@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Happy+Monkey&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <audio src="audio.mp3" style="display:block;" autoplay></audio> -->
+    <div class="popper p-1"></div>
+    <div class="popper p-2"></div>
+    <div class="cake">
+        <div class="layer first-layer">
+            <div class="rounds first"></div>
+            <div class="rounds"></div>
+            <div class="rounds"></div>
+            <div class="rounds"></div>
+            <div class="rounds"></div>
+            <div class="rounds"></div>
+            <div class="rounds"></div>
+            <div class="rounds"></div>
+            <div class="rounds"></div>
+            <div class="rounds last"></div>
+        </div>
+        <div class="layer second-layer">
+            <div class="rounds first"></div>
+            <div class="rounds"></div>
+            <div class="rounds"></div>
+            <div class="rounds"></div>
+            <div class="rounds"></div>
+            <div class="rounds"></div>
+            <div class="rounds"></div>
+            <div class="rounds last"></div>
+        </div>
+        <div class="layer third-layer">
+            <div class="rounds first"></div>
+            <div class="rounds"></div>
+            <div class="rounds"></div>
+            <div class="rounds"></div>
+            <div class="rounds"></div>
+            <div class="rounds last"></div>
+        </div>
+        <div class="cherry"></div>
+        <div class="candle c-1">
+            <div class="flame"></div>
+            <div class="candle-body"></div>
+        </div>
+        <div class="candle c-2">
+            <div class="flame"></div>
+            <div class="candle-body"></div>
+        </div>
+        <div class="candle c-3">
+            <div class="flame"></div>
+            <div class="candle-body"></div>
+        </div>
+        <div class="candle c-4">
+            <div class="flame"></div>
+            <div class="candle-body"></div>
+        </div>
+        <div class="candle c-5">
+            <div class="flame"></div>
+            <div class="candle-body"></div>
+        </div>
+        <div class="candle c-6">
+            <div class="flame"></div>
+            <div class="candle-body"></div>
+        </div>
+        <div class="candle c-7">
+            <div class="flame"></div>
+            <div class="candle-body"></div>
+        </div>
+    </div>
+    <div class="name"></div>
+    <div class="text">Happy Birthday</div>
+    <button id="playButton" style="display: none;">Play Music</button>
+    <script>
+        // Prompt the user for their name
+        let name = prompt("Enter your name");
+        let query = document.querySelector(".name");
+        
+        // Display the entered name
+        query.innerHTML = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+
+        // Check if the entered name is "Chandan" (case-insensitive)
+        
+            let playButton = document.getElementById("playButton");
+            playButton.style.display = "block"; // Show the button
+            
+            let audio = new Audio('music.mp3');
+            
+            // Add click event to the button
+            playButton.addEventListener('click', function () {
+                audio.play(); // Play the audio
+            });
+        
+    </script>
+</body>
+</html>
